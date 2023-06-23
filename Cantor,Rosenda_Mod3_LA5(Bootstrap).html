@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+ <head>
+   <meta charset="utf-8">
+</head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+	<style>
+ 	html { 
+	font-family: serif;
+	th {
+	border: 5px solid black;
+	background-color:#D0D3D4;
+	}
+	fieldset{
+  	border: 1px solid rgb(255,232,57);
+  	width: 300px;
+	text-align: center;
+	}
+	tr, td, th, table{
+	border:3px solid black;
+	}
+	td{
+	background-color: 66FFCC;
+	}
+	label{
+	display: inline-block; 
+	width: 90%; 
+	text-align: right;
+	}
+	textarea {
+	overflow-y: scroll;
+	overflow: auto;
+    	padding-bottom: 200px;
+	}
+	</style>
+ </head>
+ <body style="background-color: silver;">
+ <form action="/action_page.php">
+<center> 
+<fieldset class="field" style="width: 500px; color:brown; background-color: gray;">
+<div align="left" style="opacity: 0.9;">
+ <table>
+  <tr>
+    <td><label for="name">Name:</label></td>
+	 <td><input type="text" name="Name"></td>
+ </tr>
+ <tr>
+	 <td><label for="email">Email:</label></td>
+	 <td><input type="email" name="Email"></td>
+ </tr>
+<tr>
+	 <td><label for="address">Address:</label></td>
+	<td><textarea name="Address" cols="18" rows="5"></textarea></td>
+	</tr>			
+	<tr>
+		<td><label for="postcode">Postcode:</label></td>
+		<td><input type="text" name="postcode" size="15" value=""></td>
+	</tr>	
+  </table><br><br>
+  <table border=1>
+  <tr>
+   <td><b>Product</b></td>
+   <td><b>Part Number</b></td>
+   <td><b>Quantity</b></td>
+   <td><b>Unit Price</b></td>
+   <td><b>Subtotal</b></td>
+  </tr>
+  <tr>
+   <td>EconoBox</td>
+   <td>LB100</td>
+   <td><input type="text" name="Qlb100" size="8" value=""></td>
+   <td>R5</td>
+   <td><input type="text" name="Sublb100" size="15" value="R"></td>
+  </tr>
+  <tr>
+   <td>Standard Box</td>
+   <td>LB200</td>
+   <td><input type="text" name="Qlb200" size="8" value=""></td>
+   <td>R10</td>
+   <td><input type="text" name="Sublb200" size="15" value="R"></td>
+  </tr>
+  <tr>
+   <td>Premium Box</td>
+   <td>LB300</td>
+   <td><input type="text" name="Qlb300" size="8" value=""></td>
+   <td>R15</td>
+   <td><input type="text" name="Sublb300" size="15" value="R"></td>
+  </tr>
+  <tr>
+   <td>Deluxe Box</td>
+   <td>LB400</td>
+   <td><input type="text" name="Qlb400" size="8" value=""></td>
+   <td>R20</td>
+   <td><input type="text" name="Sublb400" size="15" value="R"></td>
+  </tr>
+  <tr>
+   <td>Super Deluxe Box</td>
+   <td>LB500</td>
+   <td><input type="text" name="Qlb500" size="8" value=""></td>
+   <td>R30</td>
+   <td><input type="text" name="Sublb500" size="15" value="R"></td>
+  </tr>
+  <tr>
+   <td colspan="5" align="right">
+   Total:  <input type="text" name="total" size="15" value="R"></td>
+  </tr>
+  </table><br><br>
+   <table>
+			<tr>
+				<th align="left">Credit Card Details</th>
+			</tr
+			<tr>
+				<td>Card Type:</td>
+       </tr>
+  <tr>
+   <td><input type="radio" name="cardmake" value="master">Mastercard</td>
+ <td><label for="card number">Card Number:</label></td> <td><input type="text" maxlength="15" size="15" placeholder="45645"></td> 
+	</tr>
+	<tr> <td>&nbsp;<input type="radio" id="visa" name="card type" value="visa">
+         <label for="visa">Visa</label></td> 
+	 <td><label for="expiry date">Expiry Date:</label></td> <td><input type="text" maxlength="5" size="5" placeholder="03/99"></td> 
+	</tr>
+   <tr>
+    <td><input type="radio" name="cardmake" value="amex">American Express</td>
+   </tr>
+   <tr>
+    <td><input type="radio" name="cardmake" value="diners">Diners Club</td>
+   </tr>
+   </table><br><br>
+  <table>
+  <tr>
+   <th>Delivery Address:</th>
+   <td><textarea name="textfield3" cols="21" rows="5">
+   </textarea name></td>
+   </tr>
+   </table><br><br>
+    <input type="submit" name="submit" value="Send order">
+    <input type="reset" name="reset" value="Clear form">
+  </fieldset>
+  </form>
+  </td>
+  </tr>
+  </table>
+<br><a href="MAIN"><b>Main Page</br></a>
+  </body>
+</html>
